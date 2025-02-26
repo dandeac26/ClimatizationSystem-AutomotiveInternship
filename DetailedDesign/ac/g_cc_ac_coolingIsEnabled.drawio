@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T11:55:45.159Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="TGhwQwwqoKI4LgLoN6gH" version="21.6.6" type="device">
+  <diagram name="Page-1" id="fEcozSnPkdaj6a2eZmbR">
+    <mxGraphModel dx="1376" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9u6ipO8QaOWB06dOLYrJ-1" value="Function: g_cc_ac_coolingIsEnabled&#xa;&#xa;&#xa;&#xa;Description:&#xa;    Checks if the cooling mechanism is on&#xa;&#xa;&#xa;&#xa;Parameters In:&#xa;    None&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    coolingSystem.enabled : bool" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="530" y="30" width="290" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="9u6ipO8QaOWB06dOLYrJ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9u6ipO8QaOWB06dOLYrJ-2" target="9u6ipO8QaOWB06dOLYrJ-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9u6ipO8QaOWB06dOLYrJ-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9u6ipO8QaOWB06dOLYrJ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9u6ipO8QaOWB06dOLYrJ-4" target="9u6ipO8QaOWB06dOLYrJ-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9u6ipO8QaOWB06dOLYrJ-4" value="call&amp;nbsp;g_cc_ac_coolingIsEnabled" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="220" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9u6ipO8QaOWB06dOLYrJ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9u6ipO8QaOWB06dOLYrJ-6" target="9u6ipO8QaOWB06dOLYrJ-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9u6ipO8QaOWB06dOLYrJ-6" value="return enabled flag from coolingSystem" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9u6ipO8QaOWB06dOLYrJ-8" value="" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="190" y="420" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

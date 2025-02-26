@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T15:07:35.714Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="VNhMIGPJ9wwTayQJ8GNY" version="21.6.6" type="device">
+  <diagram name="Page-1" id="CH8exO0Ey2P9Tq_L_rBI">
+    <mxGraphModel dx="1376" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-1" target="3NI03-_VpvEsK3_L-M7L-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-1" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-3" target="3NI03-_VpvEsK3_L-M7L-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-3" value="call&amp;nbsp;l_cc_climateControl" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-4" value="Function: l_cc_climateControl&#xa;&#xa;&#xa;&#xa;Description:&#xa;    climateControl represents the auto module. This is the logic wehre it checks if the &#xa;    module is on, if so it will run it and write the state of the buttons if auto module modified&#xa;    them. if the auto should be off, it will stop the auto module and let buttons as they were.&#xa;    Also here recirculation is set.&#xa;&#xa;&#xa;&#xa;Parameters In:&#xa;    None&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    None" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="370" width="480" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-7" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-6" target="3NI03-_VpvEsK3_L-M7L-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-15" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-6" target="3NI03-_VpvEsK3_L-M7L-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-6" value="if auto_on button is true" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-8" target="3NI03-_VpvEsK3_L-M7L-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-8" value="call g_cc_auto_stopAuto" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="720" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-10" target="3NI03-_VpvEsK3_L-M7L-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-10" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="820" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-12" target="3NI03-_VpvEsK3_L-M7L-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-12" value="call l_cc_runRecirculation of recirculation button" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="890" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-14" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1010" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-16" target="3NI03-_VpvEsK3_L-M7L-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-16" value="call g_cc_auto_run of temp gauge, recirculation and ac_on buttons" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="375" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-19" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-18" target="3NI03-_VpvEsK3_L-M7L-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-22" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-18" target="3NI03-_VpvEsK3_L-M7L-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-18" value="if &lt;br&gt;g_bsw_buttons_writeStates&lt;br&gt;is true&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="480" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-20" target="3NI03-_VpvEsK3_L-M7L-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-20" value="print error to stderr" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="515" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3NI03-_VpvEsK3_L-M7L-23" target="3NI03-_VpvEsK3_L-M7L-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="835" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3NI03-_VpvEsK3_L-M7L-23" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="660" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

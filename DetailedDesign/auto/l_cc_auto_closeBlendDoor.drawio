@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T13:24:40.362Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="tclEL1lIlRDjR4rVYXa2" version="21.6.6" type="device">
+  <diagram name="Page-1" id="Skpvmy_u3MOUOrJCYLnG">
+    <mxGraphModel dx="1376" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wRLvzgghbnOuUr4HTL3w-1" value="Function: l_cc_auto_closeBlendDoor&#xa;&#xa;&#xa;&#xa;Description:&#xa;    Function is setting the pwm data of the blend door to 0, meaning that it is fully closed.&#xa;    Also updates the heating system value.&#xa;&#xa;&#xa;&#xa;Parameters In:&#xa;    None&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    None" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="470" y="20" width="360" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="wRLvzgghbnOuUr4HTL3w-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wRLvzgghbnOuUr4HTL3w-2" target="wRLvzgghbnOuUr4HTL3w-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wRLvzgghbnOuUr4HTL3w-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="180" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wRLvzgghbnOuUr4HTL3w-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wRLvzgghbnOuUr4HTL3w-4" target="wRLvzgghbnOuUr4HTL3w-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wRLvzgghbnOuUr4HTL3w-4" value="call&amp;nbsp;l_cc_auto_closeBlendDoor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="320" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wRLvzgghbnOuUr4HTL3w-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wRLvzgghbnOuUr4HTL3w-6" target="wRLvzgghbnOuUr4HTL3w-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wRLvzgghbnOuUr4HTL3w-6" value="heatingSystem.blend_door gets assigned BLEND_DOOR_MIN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="420" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wRLvzgghbnOuUr4HTL3w-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wRLvzgghbnOuUr4HTL3w-8" target="wRLvzgghbnOuUr4HTL3w-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wRLvzgghbnOuUr4HTL3w-8" value="pwm Data input4 gets assigned BLEND_DOOR_MIN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="540" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wRLvzgghbnOuUr4HTL3w-10" value="" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="200" y="630" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

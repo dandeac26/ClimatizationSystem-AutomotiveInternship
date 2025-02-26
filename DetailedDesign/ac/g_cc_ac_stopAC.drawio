@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T12:33:12.717Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="JFZCN7D6rqychSvn8dWL" version="21.6.6" type="device">
+  <diagram name="Page-1" id="XXnfWCK5vQLDxNUOQPNb">
+    <mxGraphModel dx="1376" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-1" value="Function: g_cc_ac_stopAC&#xa;&#xa;&#xa;&#xa;Description:&#xa;    Stops the AC module. If auto module is still on, it will not stop the fan. AUTO module&#xa;    should be able to control the fan even when cooling mechanism is stopped.&#xa;    IF AUTO is off as well, it will override the fan value to 0, so it will stop the fan.&#xa;&#xa;&#xa;Parameters In:&#xa;    AUTO_ON_OFF : bool &#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    None" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="380" y="10" width="470" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zbTEmbIOqef0-_sQtcIv-3" target="zbTEmbIOqef0-_sQtcIv-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-3" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="60" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zbTEmbIOqef0-_sQtcIv-5" target="zbTEmbIOqef0-_sQtcIv-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-5" value="call&amp;nbsp;g_cc_ac_stopAC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-8" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zbTEmbIOqef0-_sQtcIv-7" target="zbTEmbIOqef0-_sQtcIv-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-12" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zbTEmbIOqef0-_sQtcIv-7" target="zbTEmbIOqef0-_sQtcIv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-7" value="if AC_ON_OFF is flase" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="350" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zbTEmbIOqef0-_sQtcIv-9" target="zbTEmbIOqef0-_sQtcIv-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="448" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-9" value="call&amp;nbsp;g_cc_ac_coolingOff" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="385" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zbTEmbIOqef0-_sQtcIv-11" target="zbTEmbIOqef0-_sQtcIv-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-11" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="540" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-15" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zbTEmbIOqef0-_sQtcIv-14" target="zbTEmbIOqef0-_sQtcIv-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-19" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zbTEmbIOqef0-_sQtcIv-14" target="zbTEmbIOqef0-_sQtcIv-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-14" value="if AC_ON_OFF is&lt;br&gt;false and AUTO_ON_OFF&lt;br&gt;is flase" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="640" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zbTEmbIOqef0-_sQtcIv-16" target="zbTEmbIOqef0-_sQtcIv-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="452.5" y="860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="453" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-16" value="call g_cc_ac_setFanSpeed with fanSpeed set as 0, and AUTO_ON_OFF which is flase" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="675" width="175" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zbTEmbIOqef0-_sQtcIv-18" target="zbTEmbIOqef0-_sQtcIv-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-18" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="860" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zbTEmbIOqef0-_sQtcIv-21" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="970" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

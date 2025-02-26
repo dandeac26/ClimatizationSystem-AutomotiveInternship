@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T13:27:53.884Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="KOl8SgcNF9i6g0wWog5c" version="21.6.6" type="device">
+  <diagram name="Page-1" id="vQ9UiKUmLytBHOBUnaOI">
+    <mxGraphModel dx="1376" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ibEMdu9cs3XWLZdNuweV-1" value="Function: g_cc_auto_stopAuto&#xa;&#xa;&#xa;&#xa;Description:&#xa;    Shuts off the heating core (this value is not used, is just to simulate &#xa;    turing off the component for heating), and closes the blend door.&#xa;    &#xa;&#xa;&#xa;&#xa;Parameters In:&#xa;    None&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    None" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="470" y="10" width="370" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="ibEMdu9cs3XWLZdNuweV-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ibEMdu9cs3XWLZdNuweV-2" target="ibEMdu9cs3XWLZdNuweV-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibEMdu9cs3XWLZdNuweV-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ibEMdu9cs3XWLZdNuweV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ibEMdu9cs3XWLZdNuweV-4" target="ibEMdu9cs3XWLZdNuweV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ibEMdu9cs3XWLZdNuweV-4" value="call&amp;nbsp;g_cc_auto_stopAuto" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="330" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ibEMdu9cs3XWLZdNuweV-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ibEMdu9cs3XWLZdNuweV-6" target="ibEMdu9cs3XWLZdNuweV-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibEMdu9cs3XWLZdNuweV-6" value="heatingSystem.heater_core gets assigned HEATING_OFF" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="450" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ibEMdu9cs3XWLZdNuweV-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ibEMdu9cs3XWLZdNuweV-9" target="ibEMdu9cs3XWLZdNuweV-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibEMdu9cs3XWLZdNuweV-9" value="call&amp;nbsp;l_cc_auto_closeBlendDoor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="550" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ibEMdu9cs3XWLZdNuweV-11" value="" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="230" y="670" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

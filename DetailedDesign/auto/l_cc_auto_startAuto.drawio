@@ -1,0 +1,207 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T13:20:34.520Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="A8M6nAQRSqSE9ophW6FN" version="21.6.6" type="device">
+  <diagram name="Page-1" id="iHUuG_LvgBMpfqoxbhDS">
+    <mxGraphModel dx="2752" dy="1536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-1" value="Function: l_cc_auto_startAuto&#xa;&#xa;&#xa;&#xa;Description:&#xa;    startAuto handles the starting all of the components related to heating.&#xa;    This will set the blend door value for either heating or cooling, and adjust fan speed, all based&#xa;    on the difference between cabin temp and the temp gauge. this value is prepresented by the &#xa;    currentState.power value.&#xa;&#xa;&#xa;&#xa;Parameters In:&#xa;    None&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    None" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="490" y="10" width="350" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-2" target="OtZrLaVEWv7hAND1_i4G-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-4" target="OtZrLaVEWv7hAND1_i4G-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-4" value="call&amp;nbsp;l_cc_auto_startAuto" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="340" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-7" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-6" target="OtZrLaVEWv7hAND1_i4G-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-24" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-6" target="OtZrLaVEWv7hAND1_i4G-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-6" value="if currentState.power&lt;br&gt;is VERY_HIGH" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="470" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-8" target="OtZrLaVEWv7hAND1_i4G-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-8" value="call&amp;nbsp;l_cc_auto_setHeatingValues with&lt;br&gt;&amp;nbsp; &amp;nbsp; blendValue:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; BLEND_DOOR_MAX&lt;br&gt;&amp;nbsp; &amp;nbsp;blendValueWhileCooling: BLEND_DOOR_MIN&lt;br&gt;&amp;nbsp;fanSpeed:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;FAN_SPEED_MAX" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="497.5" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-9" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-10" target="OtZrLaVEWv7hAND1_i4G-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-25" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-10" target="OtZrLaVEWv7hAND1_i4G-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-10" value="if currentState.power&lt;br&gt;is HIGH" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="660" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-11" target="OtZrLaVEWv7hAND1_i4G-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-11" value="call&amp;nbsp;l_cc_auto_setHeatingValues with&lt;br&gt;&amp;nbsp; &amp;nbsp; blendValue:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;BLEND_DOOR_9&lt;br&gt;&amp;nbsp; &amp;nbsp;blendValueWhileCooling:&amp;nbsp;BLEND_DOOR_1&lt;br&gt;&amp;nbsp;fanSpeed:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;FAN_SPEED_MAX" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="687.5" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-12" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-13" target="OtZrLaVEWv7hAND1_i4G-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="915" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-26" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-13" target="OtZrLaVEWv7hAND1_i4G-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-13" value="if currentState.power&lt;br&gt;is&amp;nbsp;MEDIUM_HIGH" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="850" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-14" target="OtZrLaVEWv7hAND1_i4G-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-14" value="call&amp;nbsp;l_cc_auto_setHeatingValues with&lt;br&gt;&amp;nbsp; &amp;nbsp; blendValue:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;BLEND_DOOR_8&lt;br&gt;&amp;nbsp; &amp;nbsp;blendValueWhileCooling:&amp;nbsp;BLEND_DOOR_2&lt;br&gt;&amp;nbsp;fanSpeed:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;FAN_SPEED_8" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="877.5" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-15" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-16" target="OtZrLaVEWv7hAND1_i4G-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="1095" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-27" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-16" target="OtZrLaVEWv7hAND1_i4G-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-16" value="if currentState.power&lt;br&gt;is&amp;nbsp;MEDIUM_LOW" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="1030" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-17" target="OtZrLaVEWv7hAND1_i4G-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-17" value="call&amp;nbsp;l_cc_auto_setHeatingValues with&lt;br&gt;&amp;nbsp; &amp;nbsp; blendValue:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;BLEND_DOOR_7&lt;br&gt;&amp;nbsp; &amp;nbsp;blendValueWhileCooling:&amp;nbsp;BLEND_DOOR_3&lt;br&gt;&amp;nbsp;fanSpeed:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;FAN_SPEED_6" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1057.5" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-18" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-19" target="OtZrLaVEWv7hAND1_i4G-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="1295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-28" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-19" target="OtZrLaVEWv7hAND1_i4G-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-19" value="if currentState.power&lt;br&gt;is&amp;nbsp;LOW" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="1230" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-20" target="OtZrLaVEWv7hAND1_i4G-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-20" value="call&amp;nbsp;l_cc_auto_setHeatingValues with&lt;br&gt;&amp;nbsp; &amp;nbsp; blendValue:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;BLEND_DOOR_6&lt;br&gt;&amp;nbsp; &amp;nbsp;blendValueWhileCooling:&amp;nbsp;BLEND_DOOR_4&lt;br&gt;&amp;nbsp;fanSpeed:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;FAN_SPEED_4" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1257.5" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-21" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-22" target="OtZrLaVEWv7hAND1_i4G-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="1485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-35" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-22" target="OtZrLaVEWv7hAND1_i4G-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-22" value="if currentState.power&lt;br&gt;is&amp;nbsp;VERY_LOW" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="1420" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-23" target="OtZrLaVEWv7hAND1_i4G-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-23" value="call&amp;nbsp;l_cc_auto_setHeatingValues with&lt;br&gt;&amp;nbsp; &amp;nbsp; blendValue:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;BLEND_DOOR_4&lt;br&gt;&amp;nbsp; &amp;nbsp;blendValueWhileCooling:&amp;nbsp;BLEND_DOOR_5&lt;br&gt;&amp;nbsp;fanSpeed:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;FAN_SPEED_2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1447.5" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-29" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-30" target="OtZrLaVEWv7hAND1_i4G-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="1675" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-36" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-30" target="OtZrLaVEWv7hAND1_i4G-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="1790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-30" value="if currentState.power&lt;br&gt;is&amp;nbsp;ZERO" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="1610" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-31" target="OtZrLaVEWv7hAND1_i4G-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-31" value="call&amp;nbsp;l_cc_auto_setHeatingValues with&lt;br&gt;&amp;nbsp; &amp;nbsp; blendValue:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;BLEND_DOOR_2&lt;br&gt;&amp;nbsp; &amp;nbsp;blendValueWhileCooling:&amp;nbsp;BLEND_DOOR_MIN&lt;br&gt;&amp;nbsp;fanSpeed:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;FAN_SPEED_MIN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1637.5" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-37" target="OtZrLaVEWv7hAND1_i4G-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="1940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-37" value="call&amp;nbsp;l_cc_auto_setHeatingValues with&lt;br&gt;&amp;nbsp; &amp;nbsp; blendValue:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; BLEND_DOOR_MAX&lt;br&gt;&amp;nbsp; &amp;nbsp;blendValueWhileCooling: BLEND_DOOR_MIN&lt;br&gt;&amp;nbsp;fanSpeed:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;FAN_SPEED_MAX" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1810" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-39" target="OtZrLaVEWv7hAND1_i4G-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="2070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-39" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-41" target="OtZrLaVEWv7hAND1_i4G-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-41" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="702.5" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-44" target="OtZrLaVEWv7hAND1_i4G-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-44" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="892.5" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-48" target="OtZrLaVEWv7hAND1_i4G-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-48" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1072.5" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-49" target="OtZrLaVEWv7hAND1_i4G-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-49" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1272.5" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-50" target="OtZrLaVEWv7hAND1_i4G-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-50" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1462.5" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OtZrLaVEWv7hAND1_i4G-51" target="OtZrLaVEWv7hAND1_i4G-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-51" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1652.5" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="OtZrLaVEWv7hAND1_i4G-64" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="2030" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

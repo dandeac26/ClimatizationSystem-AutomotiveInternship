@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T15:19:06.354Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="MZ6KcW2QvuU5q2NOHHe0" version="21.6.6" type="device">
+  <diagram name="Page-1" id="sivZYsPH0q3uHrxNKwGl">
+    <mxGraphModel dx="1376" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lBWDyYYtEL1t3gdEjwXu-1" target="lBWDyYYtEL1t3gdEjwXu-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-1" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="100" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lBWDyYYtEL1t3gdEjwXu-4" target="lBWDyYYtEL1t3gdEjwXu-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-4" value="call&amp;nbsp;l_cc_rearDemist" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-6" value="Function: l_cc_rearDemist&#xa;&#xa;&#xa;&#xa;Description:&#xa;    Based on the button rear_on, it will turn on the resistence in the glass meant to &#xa;    heat the rear windshield, represented by setting pwmData input8 to on or off (1 or 0)&#xa;&#xa;&#xa;&#xa;Parameters In:&#xa;    None&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    None" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="380" y="20" width="460" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-10" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lBWDyYYtEL1t3gdEjwXu-9" target="lBWDyYYtEL1t3gdEjwXu-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-12" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lBWDyYYtEL1t3gdEjwXu-9" target="lBWDyYYtEL1t3gdEjwXu-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-9" value="if rear_on signal is true" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="370" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lBWDyYYtEL1t3gdEjwXu-11" target="lBWDyYYtEL1t3gdEjwXu-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-11" value="set pwmData tinput8 to START_REAR_DEFROST_RESISTANCE&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; " style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="400" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lBWDyYYtEL1t3gdEjwXu-13" target="lBWDyYYtEL1t3gdEjwXu-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-13" value="set pwmData tinput8 to STOP_REAR_DEFROST_RESISTANCE&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; " style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="560" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lBWDyYYtEL1t3gdEjwXu-15" target="lBWDyYYtEL1t3gdEjwXu-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-15" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="650" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lBWDyYYtEL1t3gdEjwXu-18" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="760" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2023-07-25T10:36:20.244Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="7Rqf3m20ga8Mh0PFtM21" version="21.6.2" type="device">
+  <diagram name="Page-1" id="7cEo8MRnrNKs5cUcgXfi">
+    <mxGraphModel dx="1562" dy="862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HL-EICh5WthcUCJqvSte-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HL-EICh5WthcUCJqvSte-1" target="HL-EICh5WthcUCJqvSte-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HL-EICh5WthcUCJqvSte-1" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HL-EICh5WthcUCJqvSte-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="470" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HL-EICh5WthcUCJqvSte-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HL-EICh5WthcUCJqvSte-3" target="HL-EICh5WthcUCJqvSte-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HL-EICh5WthcUCJqvSte-3" value="Call get_paramSensorData" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HL-EICh5WthcUCJqvSte-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HL-EICh5WthcUCJqvSte-6" target="HL-EICh5WthcUCJqvSte-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HL-EICh5WthcUCJqvSte-6" value="call main_sensors" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HL-EICh5WthcUCJqvSte-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HL-EICh5WthcUCJqvSte-8" target="HL-EICh5WthcUCJqvSte-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HL-EICh5WthcUCJqvSte-8" value="sdata gets assigned the sensorData structure" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HL-EICh5WthcUCJqvSte-11" value="Function: get_paramSensorData&#xa;&#xa;&#xa;&#xa;Description:&#xa;    This function gets the value of sensorData structure where are sensor readings are placed.&#xa;&#xa;Parameters In:&#xa;    None&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    *sdata : sensors_t &#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    None" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="410" height="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

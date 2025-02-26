@@ -1,0 +1,166 @@
+<mxfile host="app.diagrams.net" modified="2023-08-02T09:41:59.704Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="uSETrvUpy-QmhTCEJapV" version="21.6.6" type="device">
+  <diagram name="Page-1" id="00HXpCXtsXojqIwxKfBQ">
+    <mxGraphModel dx="1619" dy="904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="60" width="1010" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-4" target="uBeehrT1CUZbb3MyKN-R-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-4" value="climateButtons.txt" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-21" value="read" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-5" target="uBeehrT1CUZbb3MyKN-R-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-5" value="adcData.txt" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-6" value="pwmData" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="200" width="110" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-11" value="Signals telling us what modules to run" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="330" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-12" value="Data from sensors" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="540" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-13" value="All pwm channels -&amp;nbsp; what modules are runnig and at what intensity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="340" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-14" value="&lt;h1&gt;Input&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-15" value="&lt;h1&gt;Output&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-17" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Climate Control Module&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-25" value="gClimateButtonsState" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-19" target="uBeehrT1CUZbb3MyKN-R-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-29" value="write&lt;br&gt;read" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-19" target="uBeehrT1CUZbb3MyKN-R-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-43" value="Recirculation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.187;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-19" target="uBeehrT1CUZbb3MyKN-R-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="110" />
+              <mxPoint x="1290" y="110" />
+              <mxPoint x="1290" y="228" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-50" value="Valve" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uBeehrT1CUZbb3MyKN-R-43">
+          <mxGeometry x="0.0747" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.347;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-19" target="uBeehrT1CUZbb3MyKN-R-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="140" />
+              <mxPoint x="1270" y="140" />
+              <mxPoint x="1270" y="252" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-47" value="Front windwhield defrost" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uBeehrT1CUZbb3MyKN-R-46">
+          <mxGeometry x="-0.0595" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1353" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="170" />
+              <mxPoint x="1250" y="170" />
+              <mxPoint x="1250" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-49" value="Rear windshield defrost" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uBeehrT1CUZbb3MyKN-R-48">
+          <mxGeometry x="-0.0064" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-19" value="climate_btn" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-28" value="adcData" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-20" target="uBeehrT1CUZbb3MyKN-R-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-20" value="BSW_ADC_cnf" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-24" target="uBeehrT1CUZbb3MyKN-R-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-24" target="uBeehrT1CUZbb3MyKN-R-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-24" target="uBeehrT1CUZbb3MyKN-R-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-24" value="climate_state" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-27" target="uBeehrT1CUZbb3MyKN-R-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-27" value="air_sensors" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-39" value="Cooling" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.003;entryY=0.615;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-31" target="uBeehrT1CUZbb3MyKN-R-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1230.0000000000002" y="199.95000000000005" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="230" />
+              <mxPoint x="840" y="230" />
+              <mxPoint x="840" y="270" />
+              <mxPoint x="1210" y="270" />
+              <mxPoint x="1210" y="292" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-40" value="fan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.027;entryY=0.735;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-31" target="uBeehrT1CUZbb3MyKN-R-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1230.0000000000002" y="220.04999999999995" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="820" y="255" />
+              <mxPoint x="820" y="290" />
+              <mxPoint x="1200" y="290" />
+              <mxPoint x="1200" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-31" value="air_conditioning" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-32" target="uBeehrT1CUZbb3MyKN-R-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-32" target="uBeehrT1CUZbb3MyKN-R-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-42" value="blend door" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.004;entryY=0.86;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="uBeehrT1CUZbb3MyKN-R-32" target="uBeehrT1CUZbb3MyKN-R-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="345" />
+              <mxPoint x="820" y="329" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBeehrT1CUZbb3MyKN-R-32" value="climate_auto" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

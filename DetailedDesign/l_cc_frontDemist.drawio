@@ -1,0 +1,151 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T15:26:55.971Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="tVwrM82hN36_A0LgdgZ8" version="21.6.6" type="device">
+  <diagram name="Page-1" id="azzgtgXRlPt45pcn-DXo">
+    <mxGraphModel dx="1376" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-1" target="vrYqWiOAc9YNRlqrHJLM-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-1" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-3" target="vrYqWiOAc9YNRlqrHJLM-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-3" value="call&amp;nbsp;l_cc_frontDemist" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-4" value="Function: l_cc_frontDemist&#xa;&#xa;&#xa;&#xa;Description:&#xa;    This function handles front demist feature. It will open a valve which redirects the air&#xa;    and close it if the option is turned off. When on, it will run the auto module to allow heated&#xa;    air to blow on the windshield, and simulatenously will start the AC, both at full strength, to dry&#xa;    the air, so the mist will go away. It will also turn recirculation on so it is easier to dehumidify&#xa;    the air.&#xa;    This needs to be called after the auto module and ac in the main climate loop, because otherwise the &#xa;    values will not persist.&#xa;&#xa;&#xa;Parameters In:&#xa;    None&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    None" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="340" y="60" width="510" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-7" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-6" target="vrYqWiOAc9YNRlqrHJLM-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-28" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-6" target="vrYqWiOAc9YNRlqrHJLM-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-6" value="if front_on signal is true" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="480" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-8" target="vrYqWiOAc9YNRlqrHJLM-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-8" value="set pwmData input 7 to REDIRECT_AIR_VALVE_OPEN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="515" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-10" target="vrYqWiOAc9YNRlqrHJLM-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-10" value="call g_cc_auto_run" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-12" target="vrYqWiOAc9YNRlqrHJLM-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-12" value="set recirculation signal true" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-14" target="vrYqWiOAc9YNRlqrHJLM-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-14" value="set ac_on signal to true" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-16" target="vrYqWiOAc9YNRlqrHJLM-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-16" value="call&amp;nbsp;l_cc_runRecirculation&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="880" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-19" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-18" target="vrYqWiOAc9YNRlqrHJLM-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-22" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-18" target="vrYqWiOAc9YNRlqrHJLM-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-18" value="if g_bsw_buttons_writeState is true" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="970" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-20" target="vrYqWiOAc9YNRlqrHJLM-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="1180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="1185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-20" value="print error to stderr" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1000" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-23" target="vrYqWiOAc9YNRlqrHJLM-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-23" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1160" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-25" target="vrYqWiOAc9YNRlqrHJLM-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-25" value="call&amp;nbsp;g_cc_ac_set_AC_ON_OFF&amp;nbsp;&lt;br&gt;with AC_ON" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1230" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-27" target="vrYqWiOAc9YNRlqrHJLM-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="1450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-27" value="call&amp;nbsp;g_cc_ac_startAC DEFROST_FAN_SPEED and AUTO_OFF" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="337.5" y="1340" width="205" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-29" target="vrYqWiOAc9YNRlqrHJLM-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="1350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-29" value="set pwmData input 7 to REDIRECT_AIR_VALVE_CLOSE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="780" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrYqWiOAc9YNRlqrHJLM-31" target="vrYqWiOAc9YNRlqrHJLM-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="1540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-31" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1410" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vrYqWiOAc9YNRlqrHJLM-34" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1570" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

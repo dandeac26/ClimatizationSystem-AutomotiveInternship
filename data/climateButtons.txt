@@ -1,0 +1,8 @@
+# [AUTO | AC | Recirculation | ON/OFF]: bool
+1110
+# [Temperature Gauge]: number -> [0->7]
+0
+# [REAR | FRONT]: bool
+10
+# [Fan Gauge]: number -> [0,10]
+0

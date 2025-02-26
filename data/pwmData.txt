@@ -1,0 +1,8 @@
+Wipers:       307
+Lights:       614
+Rec. Valve:   1024
+Blend Heat:   307
+AC Fan:       614
+Cooler+drier: 1024
+Front Valve:  0
+Rear Resist.: 1024

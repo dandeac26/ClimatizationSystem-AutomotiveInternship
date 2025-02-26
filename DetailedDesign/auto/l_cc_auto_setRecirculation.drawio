@@ -1,0 +1,185 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T13:41:48.887Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="8n9Q8tH2k1NVPv5Hz9Vh" version="21.6.6" type="device">
+  <diagram name="Page-1" id="ItDG2Yh-BuGWUidA07KU">
+    <mxGraphModel dx="1376" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-1" value="Function: l_cc_auto_setRecirculation&#xa;&#xa;&#xa;&#xa;Description:&#xa;    This function determines the appropriate state of the recirculation valve. this value&#xa;    will be returned to the pointer which is the recirculation button, which in turn in the &#xa;    climate_state component will close or open the valve to let resh air in.&#xa;&#xa;&#xa;&#xa;Parameters In:&#xa;    tempGauge uint8&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    result: bool" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="370" y="10" width="470" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-2" target="ubQ45vb3Jri2cNxhYD7i-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-4" target="ubQ45vb3Jri2cNxhYD7i-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-4" value="call&amp;nbsp;l_cc_auto_setRecirculation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-6" target="ubQ45vb3Jri2cNxhYD7i-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-6" value="declare boolean result and assign it to false" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-10" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-9" target="ubQ45vb3Jri2cNxhYD7i-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-12" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-9" target="ubQ45vb3Jri2cNxhYD7i-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-9" value="if air quality from &lt;br&gt;sensor data has value greater than UNHEALTHY" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="570" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-11" value="result is true" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="605" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-14" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-13" target="ubQ45vb3Jri2cNxhYD7i-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-21" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-13" target="ubQ45vb3Jri2cNxhYD7i-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-13" value="if weatherState &lt;br&gt;is equal to hot" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="760" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-17" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-16" target="ubQ45vb3Jri2cNxhYD7i-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-18" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-16" target="ubQ45vb3Jri2cNxhYD7i-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="895" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-16" value="if tempGauge greater &lt;br&gt;than or equal to cabin temperature" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="840" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-41" target="ubQ45vb3Jri2cNxhYD7i-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-19" value="result is false" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-20" target="ubQ45vb3Jri2cNxhYD7i-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-20" value="result is true" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-23" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-22" target="ubQ45vb3Jri2cNxhYD7i-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-34" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-22" target="ubQ45vb3Jri2cNxhYD7i-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-22" value="if weatherState &lt;br&gt;&amp;nbsp;equal to freezing" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="1100" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-25" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-27" target="ubQ45vb3Jri2cNxhYD7i-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-26" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-27" target="ubQ45vb3Jri2cNxhYD7i-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="1155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-27" value="if tempGauge less&lt;br&gt;than or equal to cabin temperature" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1100" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-28" target="ubQ45vb3Jri2cNxhYD7i-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-28" value="result is false" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="1130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-29" target="ubQ45vb3Jri2cNxhYD7i-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="1310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-29" value="result is true" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="1280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-35" target="ubQ45vb3Jri2cNxhYD7i-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="1480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-35" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="1360" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-45" target="ubQ45vb3Jri2cNxhYD7i-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="1400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="800" y="1385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-38" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1140" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-19" target="ubQ45vb3Jri2cNxhYD7i-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="1140" as="targetPoint" />
+            <mxPoint x="720" y="900" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-41" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1030" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-38" target="ubQ45vb3Jri2cNxhYD7i-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="1400" as="targetPoint" />
+            <mxPoint x="800" y="1180" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-45" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1290" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ubQ45vb3Jri2cNxhYD7i-47" target="ubQ45vb3Jri2cNxhYD7i-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="1580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-47" value="return result" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubQ45vb3Jri2cNxhYD7i-49" value="" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1540" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

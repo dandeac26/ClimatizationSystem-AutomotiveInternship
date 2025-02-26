@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T14:25:12.459Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="AJVGoOSU2uGA7fI5Sa77" version="21.6.6" type="device">
+  <diagram name="Page-1" id="KGrR1nxXtkIKHs6wa35U">
+    <mxGraphModel dx="1376" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="21F-jSV4Ow9jGcLKttnq-1" target="21F-jSV4Ow9jGcLKttnq-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-1" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="21F-jSV4Ow9jGcLKttnq-3" target="21F-jSV4Ow9jGcLKttnq-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-3" value="call&amp;nbsp;g_cc_mainClimate" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="310" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-4" value="Function: g_cc_mainClimate&#xa;&#xa;&#xa;&#xa;Description:&#xa;    This function runs a test at the beginning, and then it calls the main run function, where&#xa;    values are read and written at each step, based on the inputs from the user and modification to&#xa;    sensor readings.&#xa;&#xa;&#xa;&#xa;Parameters In:&#xa;    None&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    None" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="330" y="20" width="520" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="21F-jSV4Ow9jGcLKttnq-6" target="21F-jSV4Ow9jGcLKttnq-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-6" value="call&amp;nbsp;g_bsw_buttons_readClimate" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="21F-jSV4Ow9jGcLKttnq-8" target="21F-jSV4Ow9jGcLKttnq-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-8" value="call&amp;nbsp;g_cc_ac_set_AC_ON_OFF" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="500" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="21F-jSV4Ow9jGcLKttnq-10" target="21F-jSV4Ow9jGcLKttnq-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-10" value="call g_bsw_buttons_printState" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="600" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="21F-jSV4Ow9jGcLKttnq-12" target="21F-jSV4Ow9jGcLKttnq-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-12" value="call&amp;nbsp;l_cc_runRecirculation of gClimateButtonsState.recilculation_on" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="710" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="21F-jSV4Ow9jGcLKttnq-14" target="21F-jSV4Ow9jGcLKttnq-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-14" value="call g_cc_ac_startAC of fan and auto_on buttons" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="21F-jSV4Ow9jGcLKttnq-16" target="21F-jSV4Ow9jGcLKttnq-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-16" value="call g_cc_run" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="21F-jSV4Ow9jGcLKttnq-18" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1020" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,99 @@
+<mxfile host="app.diagrams.net" modified="2023-07-31T11:53:53.080Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="KE6bVoZtTlOPsLUXWFGa" version="21.6.6" type="device">
+  <diagram name="Page-1" id="tUjC4dknfFFde9__YG5_">
+    <mxGraphModel dx="1376" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-2" target="ZcOKGTHFuWEv3nosoNgT-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-4" target="ZcOKGTHFuWEv3nosoNgT-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-4" value="&amp;nbsp;call&amp;nbsp;g_cc_ac_coolingOff" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="200" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-5" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-7" target="ZcOKGTHFuWEv3nosoNgT-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-6" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-7" target="ZcOKGTHFuWEv3nosoNgT-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-7" value="if &lt;br&gt;AC_ON_OFF&lt;br&gt;false" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="340" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-9" target="ZcOKGTHFuWEv3nosoNgT-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-9" value="set pwmData input 6 to AC_OFF" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-11" target="ZcOKGTHFuWEv3nosoNgT-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-11" value="coolingSystem&#39;s compressor gets disabled" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-13" target="ZcOKGTHFuWEv3nosoNgT-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-13" value="coolingSystem&#39;s condenser gets disabled" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-15" target="ZcOKGTHFuWEv3nosoNgT-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-15" value="coolingSystem&#39;s evaporator gets disabled" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-17" target="ZcOKGTHFuWEv3nosoNgT-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-17" value="coolingSystem&#39;s expansion_valve gets disabled" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-19" target="ZcOKGTHFuWEv3nosoNgT-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-19" value="coolingSystem&#39;s enable assigned to false" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-21" target="ZcOKGTHFuWEv3nosoNgT-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-21" value="print warning to stderr" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZcOKGTHFuWEv3nosoNgT-23" target="ZcOKGTHFuWEv3nosoNgT-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-23" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="805" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-24" value="" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="160" y="900" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcOKGTHFuWEv3nosoNgT-25" value="Function: g_cc_ac_coolingOff&#xa;&#xa;&#xa;&#xa;Description:&#xa;    Function turns off the cooling mechanism&#xa;&#xa;&#xa;&#xa;Parameters In:&#xa;    None&#xa;&#xa;&#xa;&#xa;Parameters Out:&#xa;    None&#xa;&#xa;&#xa;&#xa;Return Value:&#xa;    None" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="570" y="10" width="280" height="340" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
