@@ -36,7 +36,8 @@
 <img width="527" alt="requirementsAutomotive" src="https://github.com/user-attachments/assets/0e3a9bf8-648d-45c8-b5b5-be06f659ed86" />
 
 ## Detailed Design Example
-![image](https://github.com/user-attachments/assets/f15fc30f-b1f1-4c48-a1d6-0e573840afd7)
+![l_cc_climateControl](https://github.com/user-attachments/assets/88c56048-db05-41c1-aafa-57bd62b132a7)
+
 
 ## Tests Example
 ![image](https://github.com/user-attachments/assets/3b28eb4a-1a53-440f-8a54-03d78ebf240a)
